@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatura Dra. Isabela de Oliveira | Medicina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =============================================
+         ENVELOPE - TELA DE ABERTURA DO CONVITE
+         ============================================= -->
+    <div class="envelope-screen" id="envelopeScreen">
+        <div class="envelope-wrapper">
+            <div class="envelope" id="envelope">
+                <!-- Aba superior (vira ao abrir) -->
+                <div class="envelope-flap" id="envelopeFlap"></div>
+                <!-- Corpo do envelope -->
+                <div class="envelope-body">
+                    <div class="envelope-seal" id="envelopeSeal">
+                        <div class="seal-inner">
+                            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="28" stroke="#c9a84c" stroke-width="1.5"/>
+                                <circle cx="30" cy="30" r="22" stroke="#c9a84c" stroke-width="0.8" stroke-dasharray="3 2"/>
+                                <!-- Caduceu de Medicina -->
+                                <line x1="30" y1="12" x2="30" y2="48" stroke="#c9a84c" stroke-width="1.5"/>
+                                <path d="M24 18 Q30 14 36 18 Q30 22 24 18Z" stroke="#c9a84c" stroke-width="1" fill="none"/>
+                                <path d="M24 24 Q30 20 36 24 Q30 28 24 24Z" stroke="#c9a84c" stroke-width="1" fill="none"/>
+                                <path d="M26 36 Q30 42 34 36" stroke="#c9a84c" stroke-width="1.2" fill="none"/>
+                                <circle cx="30" cy="12" r="2" fill="#c9a84c"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="envelope-text">
+                        <p class="envelope-para">Convite de</p>
+                        <p class="envelope-name">Formatura</p>
+                        <p class="envelope-year">Medicina</p>
+                    </div>
+                </div>
+                <!-- Aba inferior decorativa -->
+                <div class="envelope-bottom"></div>
+            </div>
+            <button class="open-btn" id="openBtn" onclick="abrirConvite()">
+                Abrir Convite
+            </button>
+        </div>
+    </div>
+
+    <!-- =============================================
+         SITE PRINCIPAL
+         ============================================= -->
+    <div class="site-content" id="siteContent">
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="inicio">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-subtitle">Convite de Formatura</p>
+                <h1 class="hero-title">Dra. Isabela de Oliveira</h1>
+                <div class="hero-divider"></div>
+                <p class="hero-course">Medicina</p>
+                <p class="hero-turma">Turma XXVI</p>
+            </div>
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section class="section section-about" id="sobre">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="img/toga.jpg" alt="Dra. Isabela de Oliveira">
+                    </div>
+                    <div class="about-text">
+                        <h2 class="section-title">Uma jornada de dedicação e amor pela medicina</h2>
+                        <div class="title-ornament"></div>
+                        <p>
+                            Foram anos de estudo, noites em claro, esforço e muita dedicação.
+                            Agora, com imensa alegria, Isabela celebra a conquista do título de
+                            Médica e convida você para fazer parte deste momento tão especial.
+                        </p>
+                        <p>
+                            Venha compartilhar essa felicidade comigo!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLENIDADES -->
+        <section class="section section-events" id="eventos">
+            <div class="container">
+                <h2 class="section-title center">Solenidades</h2>
+                <div class="title-ornament center"></div>
+
+                <div class="events-grid">
+
+                    <!-- Colação de Grau -->
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32 8L4 24L32 40L60 24L32 8Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M16 32V48C16 48 24 56 32 56C40 56 48 48 48 48V32" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <line x1="52" y1="26" x2="52" y2="52" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="52" cy="54" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3 class="event-name">Colação de Grau</h3>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                                <span>17 de Junho de 2026</span>
+                            </div>
+                            <div class="event-detail">
+                                <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                <span>Início às 19h</span>
+                            </div>
+                            <div class="event-detail">
+                                <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span>Centro de Convenções de Anápolis</span>
+                            </div>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Centro%20de%20Conven%C3%A7%C3%B5es%20An%C3%A1polis%20GO" target="_blank" rel="noopener" class="btn btn-outline">Ver Localização</a>
+                    </div>
+
+                    <!-- Culto Ecumênico -->
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32 4V60" stroke="currentColor" stroke-width="2"/>
+                                <path d="M20 20H44" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="event-name">Culto Ecumênico</h3>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                                <span>16 de Julho de 2027</span>
+                            </div>
+                            <div class="event-detail">
+                                <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                <span>Cerimônia das 16h30 às 17h</span>
+                            </div>
+                            <div class="event-detail">
+                                <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span>Local a definir</span>
+                            </div>
+                        </div>
+                        <span class="btn btn-outline btn-disabled">Local em breve</span>
+                    </div>
+
+                    <!-- Baile de Gala -->
+                    <div class="event-card featured">
+                        <div class="event-badge">Evento Principal</div>
+                        <div class="event-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="16" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M18 56C18 44 24 36 32 36C40 36 46 44 46 56" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M24 24L16 32" stroke="currentColor" stroke-width="2"/>
+                                <path d="M40 24L48 32" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="event-name">Baile de Gala</h3>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                                <span>17 de Julho de 2027</span>
+                            </div>
+                            <div class="event-detail">
+                                <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                <span>Início às 22h</span>
+                            </div>
+                            <div class="event-detail">
+                                <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                <span>Anúncio dos formandos à 00h</span>
+                            </div>
+                            <div class="event-detail">
+                                <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span>Espaço 2 Ipês</span>
+                            </div>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Espa%C3%A7o%202%20Ip%C3%AAs%20Goi%C3%A2nia%20GO" target="_blank" rel="noopener" class="btn btn-primary">Ver Localização</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTAGEM REGRESSIVA -->
+        <section class="section section-countdown" id="contagem">
+            <div class="countdown-bg">
+                <div class="container">
+                    <h2 class="section-title center light">Contagem Regressiva para o Baile de Gala</h2>
+                    <div class="title-ornament center light"></div>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">000</span>
+                            <span class="countdown-label">Dias</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-label">Horas</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-label">Minutos</span>
+                        </div>
+                        <div class="countdown-separator">:</div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">00</span>
+                            <span class="countdown-label">Segundos</span>
+                        </div>
+                    </div>
+                    <p class="countdown-date">17 de Julho de 2027</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIA DE FOTOS -->
+        <section class="section section-gallery" id="galeria">
+            <div class="container">
+                <h2 class="section-title center">Momentos Especiais</h2>
+                <div class="title-ornament center"></div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-card">
+                        <img src="img/formanda.jpg" alt="Dra. Isabela de Oliveira">
+                        <div class="gallery-caption">A Formanda</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="img/toga.jpg" alt="Isabela na toga de formatura">
+                        <div class="gallery-caption">Dia de Formatura</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="img/familia.jpg" alt="Isabela com sua família">
+                        <div class="gallery-caption">Família</div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="img/colegas.jpg" alt="Isabela com suas colegas de turma">
+                        <div class="gallery-caption">Colegas de Turma</div>
+                    </div>
+                    <div class="gallery-card gallery-card-wide">
+                        <img src="img/casal.jpg" alt="Isabela e seu namorado">
+                        <div class="gallery-caption">Nós</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONVITE EXTRA -->
+        <section class="section section-ticket" id="convite">
+            <div class="container">
+                <div class="ticket-card">
+                    <div class="ticket-left">
+                        <h2 class="section-title">Garanta seu Convite Extra</h2>
+                        <div class="title-ornament"></div>
+                        <p class="ticket-description">
+                            Para garantir o convite extra dos convidados que a formanda não conseguiu
+                            chamar por causa do seu pacote de 10 pessoas.
+                        </p>
+                    </div>
+                    <div class="ticket-right">
+                        <div class="ticket-price">
+                            <span class="price-currency">R$</span>
+                            <span class="price-value">760</span>
+                            <span class="price-cents">,00</span>
+                        </div>
+                        <p class="ticket-per">por convite</p>
+                        <p class="ticket-deadline">até o dia 20/11 ou até esgotarem</p>
+                        <a href="https://www.eformei.com.br/loja/vitrine.php?cliente=130503" target="_blank" rel="noopener" class="btn btn-primary btn-large">Garantir Convite</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PASSO A PASSO DA COMPRA COM CÓDIGO DA FORMANDA -->
+        <section class="section section-passo-a-passo" id="como-comprar">
+            <div class="container">
+                <h2 class="section-title center">Passo a Passo para a Compra</h2>
+                <div class="title-ornament center"></div>
+                <p class="passo-intro">
+                    Siga o guia prático abaixo para adquirir seu convite extra com facilidade e segurança.
+                </p>
+
+                <!-- Destaque do Código da Formanda -->
+                <div class="codigo-card">
+                    <div class="codigo-card-content">
+                        <span class="codigo-badge">Código da Formanda</span>
+                        <h3 class="codigo-title">Dra. Isabela de Oliveira</h3>
+                        <p class="codigo-subtitle">Utilize este código para localizar os convites na plataforma:</p>
+                        <div class="codigo-display-wrapper">
+                            <span class="codigo-number" id="codigoTexto">130503</span>
+                            <button class="btn-copiar" id="btnCopiar" onclick="copiarCodigo()" type="button">
+                                <svg class="copiar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                </svg>
+                                <span id="btnCopiarTexto">Copiar Código</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid de passos numerados -->
+                <div class="passos-grid">
+
+                    <div class="passo-item">
+                        <div class="passo-num">1</div>
+                        <h4 class="passo-titulo">Acesse a Loja Oficial</h4>
+                        <p class="passo-desc">
+                            Clique no botão "Garantir Convite" ou acesse a vitrine da plataforma eformei.
+                        </p>
+                    </div>
+
+                    <div class="passo-item">
+                        <div class="passo-num">2</div>
+                        <h4 class="passo-titulo">Informe o Código</h4>
+                        <p class="passo-desc">
+                            Caso solicitado na busca de formandos, digite o código <strong>130503</strong> para selecionar a Isabela.
+                        </p>
+                    </div>
+
+                    <div class="passo-item">
+                        <div class="passo-num">3</div>
+                        <h4 class="passo-titulo">Escolha a Quantidade</h4>
+                        <p class="passo-desc">
+                            Selecione a quantidade de convites extras desejada pelo valor de <strong>R$ 760,00</strong> cada.
+                        </p>
+                    </div>
+
+                    <div class="passo-item">
+                        <div class="passo-num">4</div>
+                        <h4 class="passo-titulo">Conclua o Pagamento</h4>
+                        <p class="passo-desc">
+                            Preencha seus dados de convidado e finalize até o dia <strong>20/11</strong> ou até esgotarem.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="passo-cta">
+                    <a href="https://www.eformei.com.br/loja/vitrine.php?cliente=130503" target="_blank" rel="noopener" class="btn btn-primary btn-large">Ir para a Loja Oficial</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TUTORIAIS EM PDF -->
+        <section class="section section-tutorial" id="tutorial">
+            <div class="container">
+                <h2 class="section-title center">Tutoriais Detalhados</h2>
+                <div class="title-ornament center"></div>
+                <p class="tutorial-intro">
+                    Se preferir, baixe os tutoriais completos em PDF com imagens passo a passo da plataforma.
+                </p>
+                <div class="tutorial-cards">
+
+                    <div class="tutorial-card">
+                        <div class="tutorial-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="8" y="6" width="40" height="52" rx="3" stroke="currentColor" stroke-width="2"/>
+                                <line x1="16" y1="20" x2="40" y2="20" stroke="currentColor" stroke-width="1.5"/>
+                                <line x1="16" y1="28" x2="40" y2="28" stroke="currentColor" stroke-width="1.5"/>
+                                <line x1="16" y1="36" x2="32" y2="36" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="46" cy="50" r="12" fill="white" stroke="currentColor" stroke-width="2"/>
+                                <line x1="46" y1="43" x2="46" y2="53" stroke="currentColor" stroke-width="2"/>
+                                <polyline points="41 49 46 54 51 49" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <div class="tutorial-info">
+                            <h3 class="tutorial-title">Como Comprar o Convite</h3>
+                            <p class="tutorial-desc">Passo a passo com telas ilustradas para realizar a compra do seu convite com segurança.</p>
+                        </div>
+                        <a href="TUTORIAL-COMO-COMPRAR-CONVITE.pdf" download class="btn btn-outline tutorial-btn">Baixar Tutorial</a>
+                    </div>
+
+                    <div class="tutorial-card">
+                        <div class="tutorial-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="8" y="6" width="40" height="52" rx="3" stroke="currentColor" stroke-width="2"/>
+                                <line x1="16" y1="20" x2="40" y2="20" stroke="currentColor" stroke-width="1.5"/>
+                                <line x1="16" y1="28" x2="40" y2="28" stroke="currentColor" stroke-width="1.5"/>
+                                <line x1="16" y1="36" x2="32" y2="36" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="46" cy="50" r="12" fill="white" stroke="currentColor" stroke-width="2"/>
+                                <line x1="46" y1="43" x2="46" y2="53" stroke="currentColor" stroke-width="2"/>
+                                <polyline points="41 49 46 54 51 49" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <div class="tutorial-info">
+                            <h3 class="tutorial-title">Loja do Convidado</h3>
+                            <p class="tutorial-desc">Aprenda a acessar e navegar pela loja exclusiva para convidados da formatura.</p>
+                        </div>
+                        <a href="TUTORIAL-LOJA-DO-CONVIDADO.pdf" download class="btn btn-outline tutorial-btn">Baixar Tutorial</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONFIRMAR PRESENÇA -->
+        <section class="section section-confirm" id="presenca">
+            <div class="container center-text">
+                <h2 class="section-title center light">Confirme sua Presença</h2>
+                <div class="title-ornament center light"></div>
+                <p class="confirm-text">
+                    Será uma honra contar com a sua presença neste momento tão importante.
+                    Confirme pelo WhatsApp clicando no botão abaixo.
+                </p>
+                <a href="https://api.whatsapp.com/send/?phone=5562995188870&text=Ol%C3%A1%2C+Isabela%21+Confirmo+minha+presen%C3%A7a+nas+solenidades+da+sua+formatura.+%EF%BF%BD&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="btn btn-whatsapp btn-large">
+                    <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Confirmar Presença
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-ornament"></div>
+            <p class="footer-name">Dra. Isabela de Oliveira</p>
+            <p class="footer-course">Medicina | Turma XXVI</p>
+            <a href="https://www.instagram.com/isabela_lvr" target="_blank" rel="noopener" class="footer-instagram" title="Acesse o perfil no Instagram">
+                <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+                <span>@isabela_lvr</span>
+            </a>
+        </div>
+    </footer>
+
+    </div><!-- /site-content -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
